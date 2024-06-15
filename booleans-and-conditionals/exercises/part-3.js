@@ -34,6 +34,8 @@ if (fuelLevel < 1000 || engineTemperature > 3500 || engineIndicatorLight === 're
 
 // 6) a) Create the variable commandOverride, and set it to be true or false. If commandOverride is false, then the shuttle should only launch if the fuel and engine check are OK. If commandOverride is true, then the shuttle will launch regardless of the fuel and engine status.
 
+//I wasn't sure if creating a variable was all that expected here or if the logic mentioned after "if commandOverride is false" (above) should also be implemented. 
+
 let commandOverride = false; 
 
 if (commandOverride) {
