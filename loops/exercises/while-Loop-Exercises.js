@@ -31,7 +31,7 @@ while (startingFuelLevel < 5000 || startingFuelLevel > 30000 && !Number.isIntege
 //c. Use a final loop to monitor the fuel status and the altitude of the shuttle. Each iteration, decrease the fuel level by 100 units for each astronaut aboard. Also, increase the altitude by 50 kilometers.
 altitude = 100;
 while(startingFuelLevel > 0) {
-  startingFuelLevel -= 100;
+  startingFuelLevel -= 100 * astronanutsAboard;
   altitude += 50;
 }
 
